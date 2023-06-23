@@ -138,10 +138,9 @@ body {
 
 .hero_img img {
   flex-shrink: 0;
-  width: clamp(450px, 90%, 600px);
   margin-left: auto;
   object-fit: cover;
-  object-position: -14px;
+  object-position: -13px;
 }
 
 .hero_info {
@@ -332,6 +331,10 @@ body {
     line-height: 140%;
   }
 
+  .container {
+    padding: 0;
+  }
+
   .section_header {
     font-size: 38px;
     font-weight: 500;
@@ -345,12 +348,14 @@ body {
 
   .button {
     display: inline-block;
+    padding-right: 34px;
+    padding-left: 34px;
   }
 
   .hero {
-    padding-top: 74px;
+    padding-top: 64px;
     padding-bottom: 0;
-    background-image: linear-gradient(to top, white 20px, var(--background-color) 20px);
+    background-image: linear-gradient(to top, white 30px, var(--background-color) 20px);
   }
 
   .hero_container {
@@ -373,31 +378,35 @@ body {
   .hero_info h1 {
     font-size: 22px;
     line-height: 29px;
+    margin: 6px 0;
   }
 
   .hero_button {
-    margin-top: 40px;
+    margin-top: 31px;
   }
 
   .hero_list {
     margin-top: 200px;
     margin-bottom: -20px;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 22px;
   }
 
   .hero_list .list_with_icons_item {
-    padding: 21px 65px 21px 21px;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 22px 65px 21px 21px;
   }
 
   .hero_list .list_with_icons_item::before {
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
   }
 
   .hero_img {
     position: absolute;
-    top: -50px;
-    left: 480px;
+    top: -58px;
+    left: 496px;
     width: 602px;
     height: 565px;
   }
@@ -408,7 +417,7 @@ body {
   }
 
   .products {
-    margin-top: 115px;
+    margin-top: 143px;
   }
 
   .products .section_header {
@@ -417,12 +426,13 @@ body {
 
   .products_list {
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 43px;
+    gap: 20px;
   }
 
   .products_item {
     width: 50%;
-    padding: 35px 20px 0;
+    padding: 35px 33px 0 20px;
   }
 
   .product_info h3 {
@@ -434,15 +444,17 @@ body {
   .product_info p {
     font-size: 14px;
     line-height: 140%;
+    margin-top: 10px;
     color: #000;
   }
 
   .benefits {
     display: flex;
-    margin-top: 140px;
+    margin-top: 114px;
   }
 
   .benefits .section_header {
+    padding: 0;
     text-align: left;
   }
 
@@ -454,7 +466,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 140%;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-right: 90px;
     text-align: left;
   }
@@ -469,11 +481,13 @@ body {
   }
 
   .benefits .list_with_icons_item {
-    padding-top: 70px;
+    padding-top: 76px;
+    padding-left: 37px;
   }
 
   .benefits .list_with_icons_item::before {
     font-size: 40px;
-    top: 15px;
+    top: 22px;
+    left: 34px;
   }
 }
